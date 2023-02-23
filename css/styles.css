@@ -494,7 +494,7 @@ img{
     background-color: transparent;
     margin-right: 24px;
     outline: transparent;
-    transform: border-color 250ms var(--function-for-hover);
+    transition: border-color 250ms var(--function-for-hover);
 }
 .footer-input:focus {
      border-color: var(--accent-color);
@@ -509,7 +509,7 @@ img{
     border-radius: 4px;
     border: none;
     cursor: pointer;
-    transform: background-color 250ms var(--function-for-hover);
+    transition: background-color 250ms var(--function-for-hover);
 }
 .form-button:hover,
 .form-button:focus{
@@ -700,7 +700,7 @@ img{
     border-radius: 50%;
     justify-content: center;
     align-items: center;
-    transform: fill 250ms var(--function-for-hover), 
+    transition: fill 250ms var(--function-for-hover), 
     background-color 250ms var(--function-for-hover),
     border 250ms var(--function-for-hover);
 }
@@ -724,15 +724,17 @@ img{
 .modal-label {
     display: inline-block;
     margin-bottom: 4px;
+    
 }
-
 .label-text {
     font-size: 12px;
-    line-height: 1.33px;
+    line-height: 1.33;
     letter-spacing: 0.04em;
     color: #8E8F99;
 }
-
+.form-div{
+margin-bottom: 8px;
+}
 .modal-input {
     width: 100%;
     height: 40px;
@@ -745,7 +747,7 @@ img{
     letter-spacing: 0.04em;
     padding: 8px 16px 8px 38px;
     outline: transparent;
-    transform: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color 250ms var(--function-for-hover);
 }
 
 .modal-input::placeholder {
@@ -762,7 +764,6 @@ img{
 
 .input-field {
     position: relative;
-    margin-bottom: 8px;
 }
 
 .modal-icon {
@@ -770,7 +771,7 @@ img{
     left: 16px;
     top: 50%;
     transform: translateY(-50%);
-    transform: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms var(--function-for-hover);
 }
 
 .feedback {
@@ -800,7 +801,7 @@ img{
     border: 1.25px solid var(--title-text-color);
     border-radius: 2px;
     fill:transparent;
-    transform: background-color 250ms var(--function-for-hover),
+    transition: background-color 250ms var(--function-for-hover),
     fill 250ms var(--function-for-hover),
     border 250ms var(--function-for-hover);
 }
@@ -831,7 +832,7 @@ img{
     text-align: center;
     display: block;
     margin: 0 auto;
-    transform: background-color 250ms var(--function-for-hover);
+    transition: background-color 250ms var(--function-for-hover);
 }
 .modal-button:hover,
 .modal-button:focus{
